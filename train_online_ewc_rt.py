@@ -1,6 +1,6 @@
-from Rotate_MNIST import get_rotate_mnist
-from OnlineEWC import OnlineEWC
-from LeNet import LeNet
+from Dataset.Rotate_MNIST import get_rotate_mnist
+from Regularization.OnlineEWC import OnlineEWC
+from Backbones.LeNet import LeNet
 
 import random
 import torch
