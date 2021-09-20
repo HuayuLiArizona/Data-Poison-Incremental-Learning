@@ -18,7 +18,7 @@ import json
 def train_online_ewc_rotate_mnist(lr = 0.01, batch_size = 256, epochs=20, num_task=5):
     backbone = LeNet()
     loss = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(params=backbone.parameters(), lr=lr)
+    optimizer = optim.SGD(params=backbone.parameters(), lr=lr)#optim.Adam(params=backbone.parameters(), lr=lr)
     
     ewc_on = OnlineEWC(backbone=backbone, loss=loss, opt=optimizer, gamma=0.95, importance=0.5, device='cuda:0')
     
