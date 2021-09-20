@@ -23,7 +23,7 @@ def rot_degree(task_number, num_task):
     return (min_rot(task_number, num_task), max_rot(task_number, num_task))
 
 
-def get_data(num_tasks):
+def get_rotate_mnist(num_tasks):
     scenario_train = []
     scenario_test = []
     for task_id in range(num_tasks):
