@@ -28,3 +28,6 @@ This project is tested under the following environment settings:
 !python -W ignore adv_ewc.py --dataset=adv --lr 0.0001 --batch_size 128 --epochs 10 --percentage 5 --online --ewc_lambda 5000 --num_steps 250 --decay 1.0 --epsilon 0.1 --rule 'adaptive'
 !python -W ignore adv_ewc.py --dataset=adv --lr 0.0001 --batch_size 128 --epochs 10 --percentage 20 --ewc_lambda 5000 --num_steps 250 --decay 1.0 --epsilon 0.1  --rule 'fixed'
  ````
+ 
+ # Data
+ Please extract dataset to .npy file. It will save 10x time training time due to the limitation of IO. Also, the poison algorithm is build based on the .npy data. 
