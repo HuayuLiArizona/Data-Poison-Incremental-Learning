@@ -4,7 +4,7 @@ This is a PyTorch implementation of the continual learning experiments on advers
 
 # Environment settings and libraries we used in our experiments
 This project is tested under the following environment settings:
-- '[google colab](https://colab.research.google.com/)'
+- [Google Colab](https://colab.research.google.com/)
 - PyTorch: >= 1.6.0
 - Torchvision: >= 0.6.0
 
